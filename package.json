@@ -4,8 +4,12 @@
   "description": "Code written by Gemini chat to demonstrate using an sqlite3 wasm on the command line from within a Stackblitz webcontainer.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sql": "node cli.mjs"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@sqlite.org/sqlite-wasm": "^3.54.1-build1"
+  }
 }
