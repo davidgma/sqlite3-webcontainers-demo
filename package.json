@@ -2,10 +2,14 @@
   "name": "sqlite3-webcontainers-demo",
   "version": "1.0.0",
   "description": "Code written by Gemini chat to demonstrate using an sqlite3 wasm on the command line from within a Stackblitz webcontainer.",
-  "main": "index.js",
+  "type": "module",
+  "main": "cli.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sql": "node cli.mjs"
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "build": "node -e \"console.log('Build completed')\"",
+    "sql": "node cli.mjs",
+    "test": "node cli.mjs \"SELECT sqlite_version() AS version;\""
   },
   "author": "",
   "license": "ISC",
